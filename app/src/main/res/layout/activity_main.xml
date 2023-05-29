@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/pole2"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_marginTop="45dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cheyHod" />
+
+    <TextView
+        android:id="@+id/pole3"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/pole2"
+        app:layout_constraintStart_toEndOf="@+id/pole2" />
+
+    <TextView
+        android:background="@drawable/border_textview"
+        android:onClick="onclick_pole1"
+        android:id="@+id/pole1"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/pole2"
+        app:layout_constraintEnd_toStartOf="@+id/pole2" />
+
+    <TextView
+        android:id="@+id/pole5"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pole2"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/pole4"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/pole5"
+        app:layout_constraintEnd_toStartOf="@+id/pole5" />
+
+    <TextView
+        android:id="@+id/pole6"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/pole5"
+        app:layout_constraintStart_toEndOf="@+id/pole5" />
+
+    <TextView
+        android:id="@+id/pole8"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pole5" />
+
+    <TextView
+        android:id="@+id/pole7"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/pole8"
+        app:layout_constraintEnd_toStartOf="@+id/pole8" />
+
+    <TextView
+        android:id="@+id/pole9"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/pole8"
+        app:layout_constraintStart_toEndOf="@+id/pole8" />
+
+    <Button
+        android:onClick="onlick_nachat"
+        android:id="@+id/nachat"
+        android:layout_width="169dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="72dp"
+        android:text="Начать"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pole8"
+        />
+
+    <TextView
+        android:id="@+id/cheyHod"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22"
+        tools:text="Ход" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Крестики-нолики"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Для начала игры нажмите кнопку начать"
+        android:textColor="#E64949"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+</androidx.constraintlayout.widget.ConstraintLayout>
